@@ -22,8 +22,7 @@
 After getting setup locally, we recommend exploring the code of the following files (in order):
 
 - [`0.basics.ts`](./scripts/0.basics.ts)
-- [`1.simpleTransaction.ts`](./scripts/1.simpleTransaction.ts)
-- [`2.complexTransaction.ts`](./scripts/2.complexTransaction.ts)
+- [`1.testTransactions.ts`](./scripts/1.testTransactions.ts)
 
 ### Running the included Scripts
 
@@ -45,20 +44,10 @@ portions of web3.js, including:
 - account storage `space` and `rent`
 - recent blockhash
 
-#### `1.simpleTransaction.ts`
+#### `1.testTransactions.ts`
 
-Demonstrating how to build and send simple transactions to the blockchain using web3js. Including:
-
-- connecting to the blockchain
-- generating a new keypair
-- constructing a simple instruction
-- building and signing a transaction
-- sending and confirming that transaction
-
-#### `2.complexTransaction.ts`
-
-An introduction to more complex transactions using Solana web3.js. Demonstrates how to build a more
-complex transaction, with multiple instructions.
+Demonstrating how to build and send a simple transaction to the blockchain using web3js. This script
+will run on mainnet, and will transfer 0.001 SOL from the payer to itself.
 
 ## Resources
 

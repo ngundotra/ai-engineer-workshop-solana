@@ -29,7 +29,7 @@ dotenv.config();
  *    - requires the Solana CLI be installed, but gives a better developer experience
  */
 
-const cluster: Cluster = "devnet";
+const cluster: Cluster = "mainnet-beta";
 
 /**
  * Connections
