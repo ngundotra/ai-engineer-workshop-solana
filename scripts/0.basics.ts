@@ -81,7 +81,7 @@ console.log("Secret key (NEVER SHARE):", keypair.secretKey);
 
 // you can also create a valid public key from a base58 string
 // this is a random "wallet"
-const customPubkey = new PublicKey("nick6zJc6HpW3kfBm4xS2dmbuVRyb5F3AnUvj5ymzR5");
+const customPubkey = new PublicKey("86xCnPeV69n6t3DnyGvkKobf9FdN2H9oiVDdaMpo2MMY");
 
 // this is the "token mint" for the USDC token on Solana
 const tokenProgramAccount = new PublicKey("TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA");

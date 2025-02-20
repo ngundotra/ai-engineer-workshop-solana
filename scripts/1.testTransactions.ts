@@ -42,20 +42,19 @@ const selfTransferIx = SystemProgram.transfer({
   fromPubkey: payer.publicKey,
   // `toPubkey` - does NOT have to sign the transaction
   toPubkey: payer.publicKey,
-  programId: SystemProgram.programId,
 });
 
 /**
  * build the transaction to send to the blockchain
  */
 
-// get the latest recent blockhash
-let recentBlockhash = (await connection.getLatestBlockhash()).blockhash;
+// get the latest blockhash
+let latestBlockhash = (await connection.getLatestBlockhash()).blockhash;
 
 // create a transaction message
 const message = new TransactionMessage({
   payerKey: payer.publicKey,
-  recentBlockhash,
+  recentBlockhash: latestBlockhash,
   instructions: [
     // Self-transfer lamports
     selfTransferIx,
